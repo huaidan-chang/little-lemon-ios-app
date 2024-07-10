@@ -8,10 +8,10 @@
 import SwiftUI
 
 @main
-struct Little_LemonApp: App {
+struct LittleLemonApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            Onboarding()
         }
     }
 }
