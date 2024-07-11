@@ -9,9 +9,10 @@ import SwiftUI
 
 @main
 struct LittleLemonApp: App {
+    @State var loaded = false
     var body: some Scene {
         WindowGroup {
-            Onboarding()
+            Onboarding(loaded: $loaded)
         }
     }
 }

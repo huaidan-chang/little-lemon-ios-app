@@ -10,48 +10,48 @@ import CoreData
 
 struct Menu: View {
     @Environment(\.managedObjectContext) private var viewContext
-    @State var loaded = false
-    @State var searchText = ""
+    @Binding var loaded: Bool
+    @Binding var searchText: String
+    @Binding var selectedCategory: Category
+    @State private var isLoading = true
     var body: some View {
         VStack {
-            Text("Little Lemon")
-            Text("Chicago")
-            Text("We are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.")
-            TextField("Search menu", text: $searchText)
-                                    .textFieldStyle(.roundedBorder)
-            FetchedObjects(predicate: buildPredicate(), sortDescriptors: buildSortDescriptors()) {
-                (dishes: [Dish]) in
-                List {
+            Text("Test").font(.KarlaSectionTitle())
+            if isLoading {
+                    ProgressView()
+            } else {
+                FetchedObjects(predicate: buildPredicate(), sortDescriptors: buildSortDescriptors()) {
+                    (dishes: [Dish]) in
                     ForEach(dishes, id: \.self) { dish in
                         NavigationLink(destination: DishDetailView(dish: dish)) {
-                            HStack {
-                                if let imageUrl = dish.image, let url = URL(string: imageUrl) {
-                                    AsyncImage(url: url) { image in
-                                        image.resizable()
-                                    } placeholder: {
-                                        Color.gray
-                                    }
-                                    .frame(width: 50, height: 50)
-                                }
-                                VStack(alignment: .leading) {
-                                    Text(dish.title ?? "Untitled")
-                                        .fontWeight(.medium)
-                                    Text("Price: \(dish.price ?? "N/A")")
-                                        .font(.subheadline)
-                                        .foregroundColor(.secondary)
-                                }
+                            if selectedCategory == Category.all || dish.category == selectedCategory.rawValue {
+                                MenuItemView(dish: dish)
                             }
                         }
                     }
                 }
-                .listStyle(.plain)
             }
         }.onAppear {
             if !loaded {
                 getMenuData()
+                whereIsMySQLite()
                 loaded = true
+            } else {
+                isLoading = false
             }
         }
+    }
+    
+    func whereIsMySQLite() {
+        let path = FileManager
+            .default
+            .urls(for: .applicationSupportDirectory, in: .userDomainMask)
+            .last?
+            .absoluteString
+            .replacingOccurrences(of: "file://", with: "")
+            .removingPercentEncoding
+        
+        print(path ?? "Not found")
     }
     
     func buildSortDescriptors() -> [NSSortDescriptor] {
@@ -67,7 +67,9 @@ struct Menu: View {
     }
     
     func getMenuData() {
-        // PersistenceController.shared.clear()
+        isLoading = true
+        PersistenceController.shared.clear()
+        PersistenceController.shared.debugCheckData()
         let urlString = "https://raw.githubusercontent.com/Meta-Mobile-Developer-PC/Working-With-Data-API/main/menu.json"
         let url = URL(string: urlString)!
         let request = URLRequest(url: url)
@@ -85,6 +87,7 @@ struct Menu: View {
                         newDish.category = dish.category
                     }
                     try? viewContext.save()
+                    
                 } else {
                     print(error.debugDescription.description)
                 }
@@ -93,9 +96,11 @@ struct Menu: View {
             }
         }
         task.resume()
+        print("isLoading complete!!!!")
+        isLoading = false
     }
 }
 
-#Preview {
-    Menu()
-}
+//#Preview {
+//    Menu()
+//}

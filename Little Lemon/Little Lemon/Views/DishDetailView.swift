@@ -16,21 +16,21 @@ struct DishDetailView: View {
                 AsyncImage(url: URL(string: dish.image ?? "")) { image in
                     image.resizable()
                 } placeholder: {
-                    Color.gray.frame(width: 300, height: 300)
+                    ProgressView().frame(width: 300, height: 200)
                 }
                 .aspectRatio(contentMode: .fit)
                 
                 Text(dish.title ?? "No title")
-                    .font(.title)
+                    .font(.KarlaSectionTitle())
                     .foregroundColor(.primary)
                 
                 Text("Price: \(dish.price ?? "N/A")")
-                    .font(.headline)
-                    .foregroundColor(.secondary)
+                    .font(.KarlaCardTitle())
+                    .foregroundColor(.primary1)
                 // Description
                 Text(dish.desc ?? "")
-                          .font(.body)
-                          .foregroundColor(.secondary)
+                    .font(.KarlaHighlightText())
+                    .foregroundColor(.secondary4)
             }
             .padding()
         }

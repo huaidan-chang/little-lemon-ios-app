@@ -21,6 +21,18 @@
 		772B99BA2C3E3125006F8FA6 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772B99B92C3E3125006F8FA6 /* MenuItem.swift */; };
 		772B99BD2C3E371E006F8FA6 /* ExampleDatabase.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 772B99BB2C3E371E006F8FA6 /* ExampleDatabase.xcdatamodeld */; };
 		772B99BF2C3E3CC3006F8FA6 /* DishDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772B99BE2C3E3CC3006F8FA6 /* DishDetailView.swift */; };
+		772B99C52C3EEF6B006F8FA6 /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772B99C42C3EEF6B006F8FA6 /* NavigationBar.swift */; };
+		772B9A0C2C3FB362006F8FA6 /* Karla-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 772B9A0B2C3FB362006F8FA6 /* Karla-ExtraBold.ttf */; };
+		772B9A0E2C3FB377006F8FA6 /* Karla-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 772B9A0D2C3FB377006F8FA6 /* Karla-Bold.ttf */; };
+		772B9A102C3FB383006F8FA6 /* Karla-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 772B9A0F2C3FB382006F8FA6 /* Karla-Medium.ttf */; };
+		772B9A122C3FB397006F8FA6 /* Karla-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 772B9A112C3FB397006F8FA6 /* Karla-Regular.ttf */; };
+		772B9A142C3FB3AA006F8FA6 /* MarkaziText-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 772B9A132C3FB3AA006F8FA6 /* MarkaziText-Regular.ttf */; };
+		772B9A162C3FB3B3006F8FA6 /* MarkaziText-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 772B9A152C3FB3B3006F8FA6 /* MarkaziText-Medium.ttf */; };
+		772B9A182C3FB3DA006F8FA6 /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772B9A172C3FB3DA006F8FA6 /* Styles.swift */; };
+		772B9A1B2C3FB518006F8FA6 /* Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772B9A1A2C3FB518006F8FA6 /* Hero.swift */; };
+		772B9A1D2C3FC2D2006F8FA6 /* MenuItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772B9A1C2C3FC2D2006F8FA6 /* MenuItemView.swift */; };
+		772B9A1F2C3FD10F006F8FA6 /* CheckboxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772B9A1E2C3FD10F006F8FA6 /* CheckboxView.swift */; };
+		772B9A232C3FDA81006F8FA6 /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772B9A222C3FDA81006F8FA6 /* Validator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +51,19 @@
 		772B99B92C3E3125006F8FA6 /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
 		772B99BC2C3E371E006F8FA6 /* ExampleDatabase.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ExampleDatabase.xcdatamodel; sourceTree = "<group>"; };
 		772B99BE2C3E3CC3006F8FA6 /* DishDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishDetailView.swift; sourceTree = "<group>"; };
+		772B99C42C3EEF6B006F8FA6 /* NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
+		772B9A0B2C3FB362006F8FA6 /* Karla-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Karla-ExtraBold.ttf"; sourceTree = "<group>"; };
+		772B9A0D2C3FB377006F8FA6 /* Karla-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Karla-Bold.ttf"; sourceTree = "<group>"; };
+		772B9A0F2C3FB382006F8FA6 /* Karla-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Karla-Medium.ttf"; sourceTree = "<group>"; };
+		772B9A112C3FB397006F8FA6 /* Karla-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Karla-Regular.ttf"; sourceTree = "<group>"; };
+		772B9A132C3FB3AA006F8FA6 /* MarkaziText-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MarkaziText-Regular.ttf"; sourceTree = "<group>"; };
+		772B9A152C3FB3B3006F8FA6 /* MarkaziText-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MarkaziText-Medium.ttf"; sourceTree = "<group>"; };
+		772B9A172C3FB3DA006F8FA6 /* Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
+		772B9A192C3FB410006F8FA6 /* Little-Lemon-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Little-Lemon-Info.plist"; sourceTree = SOURCE_ROOT; };
+		772B9A1A2C3FB518006F8FA6 /* Hero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hero.swift; sourceTree = "<group>"; };
+		772B9A1C2C3FC2D2006F8FA6 /* MenuItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemView.swift; sourceTree = "<group>"; };
+		772B9A1E2C3FD10F006F8FA6 /* CheckboxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckboxView.swift; sourceTree = "<group>"; };
+		772B9A222C3FDA81006F8FA6 /* Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,20 +96,16 @@
 		772B999A2C3D8E64006F8FA6 /* Little Lemon */ = {
 			isa = PBXGroup;
 			children = (
-				772B99B32C3E3044006F8FA6 /* FetchedObjects.swift */,
-				772B99B42C3E3044006F8FA6 /* Persistence.swift */,
-				772B99AB2C3E177B006F8FA6 /* Home.swift */,
+				772B9A192C3FB410006F8FA6 /* Little-Lemon-Info.plist */,
+				772B9A0A2C3FB342006F8FA6 /* Fonts */,
+				772B99C32C3EE711006F8FA6 /* Const */,
+				772B99C22C3EE6CA006F8FA6 /* CoreData */,
+				772B99C12C3EE6A9006F8FA6 /* Models */,
+				772B99C02C3EE656006F8FA6 /* Views */,
 				772B999B2C3D8E64006F8FA6 /* LittleLemonApp.swift */,
 				772B999F2C3D8E66006F8FA6 /* Assets.xcassets */,
 				772B99A12C3D8E66006F8FA6 /* Preview Content */,
-				772B99A92C3E143A006F8FA6 /* Onboarding.swift */,
-				772B99AD2C3E17F8006F8FA6 /* Menu.swift */,
-				772B99AF2C3E1AE1006F8FA6 /* UserProfile.swift */,
-				772B99B12C3E1E6D006F8FA6 /* Constants.swift */,
-				772B99B72C3E311A006F8FA6 /* MenuList.swift */,
-				772B99B92C3E3125006F8FA6 /* MenuItem.swift */,
 				772B99BB2C3E371E006F8FA6 /* ExampleDatabase.xcdatamodeld */,
-				772B99BE2C3E3CC3006F8FA6 /* DishDetailView.swift */,
 			);
 			path = "Little Lemon";
 			sourceTree = "<group>";
@@ -95,6 +116,63 @@
 				772B99A22C3D8E66006F8FA6 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		772B99C02C3EE656006F8FA6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				772B99BE2C3E3CC3006F8FA6 /* DishDetailView.swift */,
+				772B99AD2C3E17F8006F8FA6 /* Menu.swift */,
+				772B99AB2C3E177B006F8FA6 /* Home.swift */,
+				772B99AF2C3E1AE1006F8FA6 /* UserProfile.swift */,
+				772B99A92C3E143A006F8FA6 /* Onboarding.swift */,
+				772B99C42C3EEF6B006F8FA6 /* NavigationBar.swift */,
+				772B9A1A2C3FB518006F8FA6 /* Hero.swift */,
+				772B9A1C2C3FC2D2006F8FA6 /* MenuItemView.swift */,
+				772B9A1E2C3FD10F006F8FA6 /* CheckboxView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		772B99C12C3EE6A9006F8FA6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				772B99B92C3E3125006F8FA6 /* MenuItem.swift */,
+				772B99B72C3E311A006F8FA6 /* MenuList.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		772B99C22C3EE6CA006F8FA6 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				772B99B42C3E3044006F8FA6 /* Persistence.swift */,
+				772B99B32C3E3044006F8FA6 /* FetchedObjects.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		772B99C32C3EE711006F8FA6 /* Const */ = {
+			isa = PBXGroup;
+			children = (
+				772B99B12C3E1E6D006F8FA6 /* Constants.swift */,
+				772B9A172C3FB3DA006F8FA6 /* Styles.swift */,
+				772B9A222C3FDA81006F8FA6 /* Validator.swift */,
+			);
+			path = Const;
+			sourceTree = "<group>";
+		};
+		772B9A0A2C3FB342006F8FA6 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				772B9A0B2C3FB362006F8FA6 /* Karla-ExtraBold.ttf */,
+				772B9A0F2C3FB382006F8FA6 /* Karla-Medium.ttf */,
+				772B9A112C3FB397006F8FA6 /* Karla-Regular.ttf */,
+				772B9A132C3FB3AA006F8FA6 /* MarkaziText-Regular.ttf */,
+				772B9A152C3FB3B3006F8FA6 /* MarkaziText-Medium.ttf */,
+				772B9A0D2C3FB377006F8FA6 /* Karla-Bold.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,7 +234,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				772B99A32C3D8E66006F8FA6 /* Preview Assets.xcassets in Resources */,
+				772B9A102C3FB383006F8FA6 /* Karla-Medium.ttf in Resources */,
+				772B9A142C3FB3AA006F8FA6 /* MarkaziText-Regular.ttf in Resources */,
 				772B99A02C3D8E66006F8FA6 /* Assets.xcassets in Resources */,
+				772B9A162C3FB3B3006F8FA6 /* MarkaziText-Medium.ttf in Resources */,
+				772B9A0C2C3FB362006F8FA6 /* Karla-ExtraBold.ttf in Resources */,
+				772B9A0E2C3FB377006F8FA6 /* Karla-Bold.ttf in Resources */,
+				772B9A122C3FB397006F8FA6 /* Karla-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -168,16 +252,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				772B99BD2C3E371E006F8FA6 /* ExampleDatabase.xcdatamodeld in Sources */,
+				772B9A182C3FB3DA006F8FA6 /* Styles.swift in Sources */,
 				772B99AA2C3E143A006F8FA6 /* Onboarding.swift in Sources */,
 				772B99B62C3E3044006F8FA6 /* Persistence.swift in Sources */,
 				772B99AC2C3E177B006F8FA6 /* Home.swift in Sources */,
+				772B9A1B2C3FB518006F8FA6 /* Hero.swift in Sources */,
+				772B99C52C3EEF6B006F8FA6 /* NavigationBar.swift in Sources */,
 				772B99B02C3E1AE1006F8FA6 /* UserProfile.swift in Sources */,
 				772B99AE2C3E17F8006F8FA6 /* Menu.swift in Sources */,
 				772B999C2C3D8E64006F8FA6 /* LittleLemonApp.swift in Sources */,
+				772B9A232C3FDA81006F8FA6 /* Validator.swift in Sources */,
 				772B99B52C3E3044006F8FA6 /* FetchedObjects.swift in Sources */,
 				772B99B82C3E311A006F8FA6 /* MenuList.swift in Sources */,
+				772B9A1D2C3FC2D2006F8FA6 /* MenuItemView.swift in Sources */,
 				772B99BF2C3E3CC3006F8FA6 /* DishDetailView.swift in Sources */,
 				772B99B22C3E1E6D006F8FA6 /* Constants.swift in Sources */,
+				772B9A1F2C3FD10F006F8FA6 /* CheckboxView.swift in Sources */,
 				772B99BA2C3E3125006F8FA6 /* MenuItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -315,6 +405,7 @@
 				DEVELOPMENT_TEAM = DMG8YS4ZJL;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Little-Lemon-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -344,6 +435,7 @@
 				DEVELOPMENT_TEAM = DMG8YS4ZJL;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Little-Lemon-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
